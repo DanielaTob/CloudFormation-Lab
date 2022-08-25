@@ -1,0 +1,11 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09", //AWSTemplateFormatVersion: este parámetro es opcional. Aquí especificamos la versión de la plantilla
+    "Description": "this template does XXXX", //Description: cadena de texto que describe la plantilla. Debe ir después de AWSTemplateFormatVersion
+    "Metadata": {}, //Metadata: objetos que proporcionan información adicional sobre la plantilla
+    "Parameters": {}, //Parameters: valores que pasaremos a la plantilla al ejecutarse, ya sea durante la creación o actualización del *stack
+    "Mappings": {}, //Mappings: permite asignar un conjunto de valores a una clave específica. Por ejemplo, para establecer valores en función de una región, podemos crear un mapping que usa el nombre de una región como clave y contiene los valores que deseemos especificar para cada región
+    "Conditions": {}, //Conditions: controla que se creen recursos o se asignen valores a dichos recursos en función de una condición. Por ejemplo, podemos asignar valores distintos para entornos de producción o de prueba
+    "Transform": {}, //Transform: especifica las macros que AWS CloudFormation usa para procesar la plantilla
+    "Resources": {}, //Resources: aquí se declaran los recursos a incluir en el stack. Por ejemplo, instancias EC2 o buckets de S3.
+    "Outputs": {} //Outputs: declara valores de salida que pueden ser usados en otros stacks
+}
